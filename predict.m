@@ -1,4 +1,5 @@
-file=csvread('datasetAdm.csv');
+filename=input('Enter the CSV dataset: ','s');
+file=csvread(filename);
 file=file(randperm(size(file,1)),:);
 fileSize=size(file);
 y=file(:,fileSize(2));
